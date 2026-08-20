@@ -1,10 +1,233 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>GroundShot</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="GroundShot — an academic research project page."
+    />
+    <meta property="og:title" content="GroundShot: Your Paper Subtitle" />
+    <meta
+      property="og:description"
+      content="A short one-sentence description of your research project."
+    />
+    <meta property="og:image" content="assets/images/teaser-placeholder.png" />
+    <title>GroundShot | Project Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>GroundShot</h1>
-    <p>Project page coming soon.</p>
+    <header class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Research Project · 2026</p>
+        <h1><span class="accent">GroundShot</span>: Your Paper Subtitle Goes Here</h1>
+
+        <div class="authors" aria-label="Authors">
+          <a href="#" title="Replace with the author's homepage">Author One<sup>1</sup></a>
+          <a href="#" title="Replace with the author's homepage">Author Two<sup>1</sup></a>
+          <a href="#" title="Replace with the author's homepage">Author Three<sup>2</sup></a>
+          <a href="#" title="Replace with the author's homepage">Author Four<sup>1,2</sup></a>
+        </div>
+
+        <div class="affiliations">
+          <span><sup>1</sup> University / Institution One</span>
+          <span><sup>2</sup> University / Institution Two</span>
+        </div>
+        <p class="venue">Conference / Journal 2026</p>
+
+        <nav class="link-row" aria-label="Project links">
+          <a class="pill" href="#" aria-label="Paper placeholder link"><span>↗</span> Paper</a>
+          <a class="pill" href="#" aria-label="arXiv placeholder link"><span>α</span> arXiv</a>
+          <a class="pill" href="#" aria-label="GitHub placeholder link"><span>⌘</span> Code</a>
+          <a class="pill" href="#results" aria-label="Jump to results"><span>▶</span> Results</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--tight">
+        <div class="container container--wide">
+          <figure class="feature-figure">
+            <img
+              src="assets/images/teaser-placeholder.png"
+              alt="Placeholder teaser showing GroundShot's main idea"
+            />
+            <figcaption>
+              <strong>GroundShot at a glance.</strong> Replace this sentence with a concise teaser caption that explains the task, the core idea, and the main benefit.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="abstract">
+        <div class="container prose">
+          <h2>Abstract</h2>
+          <p>
+            This is a placeholder abstract. Briefly introduce the research problem, explain why existing approaches are limited, and summarize the key idea behind GroundShot. Then describe the most important technical contribution and finish with one or two sentences about the main experimental findings. A typical project-page abstract is around 150–220 words.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="highlights">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Why it matters</p>
+            <h2>Highlights</h2>
+          </div>
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <span class="highlight-card__number">01</span>
+              <h3>Clear problem framing</h3>
+              <p>One short sentence describing the gap your work addresses.</p>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-card__number">02</span>
+              <h3>Simple core idea</h3>
+              <p>One short sentence explaining what is technically new.</p>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-card__number">03</span>
+              <h3>Strong results</h3>
+              <p>One short sentence summarizing the key empirical result.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="method">
+        <div class="container container--wide">
+          <div class="section-heading section-heading--center">
+            <p class="kicker">How it works</p>
+            <h2>Method</h2>
+            <p class="section-intro">Use a single wide figure to explain the full pipeline before adding technical details.</p>
+          </div>
+          <figure class="feature-figure">
+            <img
+              src="assets/images/method-placeholder.png"
+              alt="Placeholder diagram for the GroundShot method"
+            />
+            <figcaption>
+              <strong>Method overview.</strong> Replace this caption with a step-by-step explanation of the diagram. For example: (a) input and preprocessing, (b) the proposed architecture, and (c) the final output or training objective.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="results">
+        <div class="container container--wide">
+          <div class="section-heading section-heading--center section-heading--light">
+            <p class="kicker">Qualitative results</p>
+            <h2>Results</h2>
+            <p class="section-intro">Replace the preview cards with your MP4, WebM, GIF, or image results.</p>
+          </div>
+
+          <div class="results-grid">
+            <article class="result-card">
+              <div class="result-media">
+                <img src="assets/images/result-01-placeholder.png" alt="Placeholder for result example one" />
+                <span class="play-badge" aria-hidden="true">▶</span>
+              </div>
+              <div class="result-card__body">
+                <p class="result-label">Example 01</p>
+                <h3>A concise result title</h3>
+                <p>Prompt, input condition, or one-line description goes here.</p>
+              </div>
+            </article>
+
+            <article class="result-card">
+              <div class="result-media">
+                <img src="assets/images/result-02-placeholder.png" alt="Placeholder for result example two" />
+                <span class="play-badge" aria-hidden="true">▶</span>
+              </div>
+              <div class="result-card__body">
+                <p class="result-label">Example 02</p>
+                <h3>A concise result title</h3>
+                <p>Prompt, input condition, or one-line description goes here.</p>
+              </div>
+            </article>
+
+            <article class="result-card">
+              <div class="result-media">
+                <img src="assets/images/result-03-placeholder.png" alt="Placeholder for result example three" />
+                <span class="play-badge" aria-hidden="true">▶</span>
+              </div>
+              <div class="result-card__body">
+                <p class="result-label">Example 03</p>
+                <h3>A concise result title</h3>
+                <p>Prompt, input condition, or one-line description goes here.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="replacement-note">Video files can live in <code>assets/videos/</code>. See that folder’s README for the exact replacement snippet.</p>
+        </div>
+      </section>
+
+      <section class="section" id="comparison">
+        <div class="container container--wide">
+          <div class="section-heading section-heading--center">
+            <p class="kicker">Evaluation</p>
+            <h2>Comparison</h2>
+            <p class="section-intro">A compact table works well for headline quantitative results.</p>
+          </div>
+          <div class="table-wrap" role="region" aria-label="Comparison results" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Method</th>
+                  <th>Metric ↑</th>
+                  <th>Metric ↓</th>
+                  <th>User Study ↑</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Baseline A</td><td>00.0</td><td>00.0</td><td>00.0%</td></tr>
+                <tr><td>Baseline B</td><td>00.0</td><td>00.0</td><td>00.0%</td></tr>
+                <tr class="ours"><td>GroundShot (Ours)</td><td><strong>00.0</strong></td><td><strong>00.0</strong></td><td><strong>00.0%</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="bibtex">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Citation</p>
+            <h2>BibTeX</h2>
+          </div>
+          <div class="code-block">
+            <button class="copy-button" type="button" data-copy-bibtex>Copy</button>
+            <pre><code id="bibtex-code">@article{groundshot2026,
+  title   = {GroundShot: Your Paper Subtitle Goes Here},
+  author  = {Author One and Author Two and Author Three and Author Four},
+  journal = {Conference or arXiv},
+  year    = {2026}
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="acknowledgements">
+        <div class="container prose">
+          <h2>Acknowledgements</h2>
+          <p>Add funding, collaborator, compute, and dataset acknowledgements here.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span data-current-year>2026</span> GroundShot authors.</p>
+        <p>Academic project page inspired by the clean structure of modern research websites.</p>
+      </div>
+    </footer>
   </body>
 </html>
