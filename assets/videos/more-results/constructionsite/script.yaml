@@ -1,0 +1,103 @@
+global_caption: At a bustling construction site, two men—both fit, grey-haired, and
+  exuding authority—draw attention through their subtle rivalry. The first, char_01,
+  is in his early sixties with a grey crew cut and military bearing, his khaki field
+  jacket bristling with pockets. The second, char_02, is a tall man in his mid forties
+  with short grey hair, a square jaw, and deep-set brown eyes, dressed in an olive
+  drab utility jacket. Their interactions reveal a story of mutual observation and
+  unspoken competition amid scaffolding and cranes.
+metadata:
+  script_id: B2_03
+  module: B
+  sub_module: B2
+  primary_challenge: visually_similar_pairs
+  challenge_level: 3
+  generation_seed: 44000
+  total_shots: 5
+  characters:
+  - id: char_01
+    description: early 60s male, grey crew cut, clean-shaven, military bearing, fit,
+      wearing khaki field jacket with many pockets
+    gender: male
+    age: early 60s
+    appearances:
+    - 1
+    - 3
+    - 4
+    - 5
+  - id: char_02
+    description: mid 40s male, short grey hair, square jaw, tall and fit, deep-set
+      brown eyes, wearing olive drab utility jacket
+    gender: male
+    age: mid 40s
+    appearances:
+    - 2
+    - 3
+    - 5
+  settings:
+  - id: set_22
+    name: construction site
+    description: An active construction zone with scaffolding, cranes, and exposed
+      concrete
+shots:
+- shot_id: 1
+  text: Sunlight washes over the construction site as char_01 stands framed by scaffolding,
+    his grey crew cut and fit build unmistakable. He surveys the area with a clean-shaven
+    jaw set firm, hands resting in the pockets of his khaki field jacket. Cranes loom
+    behind him, dust swirling at his feet, amplifying his military bearing as he scans
+    the chaos for something—or someone.
+  duration_seconds: 4.0
+  shot_type: medium
+  lighting: daylight
+  camera_angle: frontal
+  characters_present:
+  - char_01
+- shot_id: 2
+  text: Close up, char_02’s deep-set brown eyes glint with intensity. His square jaw
+    tenses as he leans forward, the olive drab utility jacket tight across his tall,
+    fit frame. Concrete pillars rise behind him, unfinished and raw. The camera lingeres
+    on his short grey hair, emphasizing his watchful gaze as he focuses intently on
+    movement in the distance.
+  duration_seconds: 4.0
+  shot_type: close-up
+  lighting: daylight
+  camera_angle: frontal
+  characters_present:
+  - char_02
+- shot_id: 3
+  text: Overcast light softens the edges as both men face each other in a tight close-up.
+    Char_01’s khaki field jacket contrasts with char_02’s olive drab utility jacket,
+    their eyes locked and searching. Beads of sweat dot their brows; the tension is
+    palpable. Neither speaks, but the rivalry between the two is clear in their silent
+    exchange, the construction site’s noise muffled by their intensity.
+  duration_seconds: 4.0
+  shot_type: close-up
+  lighting: overcast
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+- shot_id: 4
+  text: A medium shot reveals char_01 in his khaki field jacket, standing near a stack
+    of rebar. He glances sideways, lips pressed thin, as he observes activity from
+    afar. His posture remains upright, military straight, while shadows from overhead
+    beams stretch across the cracked concrete. Dust motes drift in the air, highlighting
+    his unwavering vigilance.
+  duration_seconds: 4.0
+  shot_type: medium
+  lighting: overcast
+  camera_angle: frontal
+  characters_present:
+  - char_01
+- shot_id: 5
+  text: In a close-up, char_01’s khaki jacket sleeve brushes against char_02’s olive
+    utility jacket. Their faces are inches apart, expressions guarded. Char_02’s deep-set
+    eyes flicker with resolve; char_01’s jaw clenches. Sunlight returns, illuminating
+    their features and marking the subtle distinction in their rivalry, as if each
+    is measuring the other’s resolve in the charged silence.
+  duration_seconds: 4.0
+  shot_type: close-up
+  lighting: daylight
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02

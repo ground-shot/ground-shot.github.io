@@ -12,7 +12,7 @@
       property="og:description"
       content="A short one-sentence description of your research project."
     />
-    <meta property="og:image" content="assets/images/teaser-placeholder.png" />
+    <meta property="og:image" content="assets/figures/teaser.png" />
     <title>GroundShot | Project Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,27 +26,29 @@
   <body>
     <header class="hero">
       <div class="container hero__inner">
-        <p class="eyebrow">Research Project · 2026</p>
-        <h1><span class="accent">GroundShot</span>: Your Paper Subtitle Goes Here</h1>
+        <!-- <p class="eyebrow">Research Project · 2026</p> -->
+        <h1><span class="accent">GroundShot</span>: Visually Consistent Multi-Shot Long Video Generation via
+Entity-Grounded Shot Scheduling</h1>
 
         <div class="authors" aria-label="Authors">
-          <a href="#" title="Replace with the author's homepage">Author One<sup>1</sup></a>
-          <a href="#" title="Replace with the author's homepage">Author Two<sup>1</sup></a>
-          <a href="#" title="Replace with the author's homepage">Author Three<sup>2</sup></a>
-          <a href="#" title="Replace with the author's homepage">Author Four<sup>1,2</sup></a>
+          <a href="https://github.com/YixuannnL" target="_blank" rel="noopener noreferrer" title="Yixuan Lai's homepage">Yixuan Lai<sup>1</sup></a>
+          <a href="https://person.zju.edu.cn/en/tjshao" target="_blank" rel="noopener noreferrer" title="Tianjia Shao's homepage">Tianjia Shao<sup>1,*</sup></a>
+          <a href="https://tj12323.github.io/" target="_blank" rel="noopener noreferrer" title="Weijia Dou's homepage">Weijia Dou<sup>2</sup></a>
+          <a href="https://sites.google.com/site/zhusiyucs/home" target="_blank" rel="noopener noreferrer" title="Siyu Zhu's homepage">Siyu Zhu<sup>2</sup></a>
+          <a href="https://jingdongwang2017.github.io/" target="_blank" rel="noopener noreferrer" title="Jingdong Wang's homepage">Jingdong Wang<sup>3</sup></a>
         </div>
 
         <div class="affiliations">
-          <span><sup>1</sup> University / Institution One</span>
-          <span><sup>2</sup> University / Institution Two</span>
+          <span><sup>1</sup> State Key Lab of CAD&amp;CG, Zhejiang University</span>
+          <span><sup>2</sup> Fudan University</span>
+          <span><sup>3</sup> Baidu</span>
+          <span class="corresponding"><sup>*</sup> Corresponding author</span>
         </div>
-        <p class="venue">Conference / Journal 2026</p>
+        <!-- <p class="venue">Conference / Journal 2026</p> -->
 
         <nav class="link-row" aria-label="Project links">
-          <a class="pill" href="#" aria-label="Paper placeholder link"><span>↗</span> Paper</a>
-          <a class="pill" href="#" aria-label="arXiv placeholder link"><span>α</span> arXiv</a>
-          <a class="pill" href="#" aria-label="GitHub placeholder link"><span>⌘</span> Code</a>
-          <a class="pill" href="#results" aria-label="Jump to results"><span>▶</span> Results</a>
+          <a class="pill" href="https://arxiv.org/abs/2606.20799" target="_blank" rel="noopener noreferrer" aria-label="Read GroundShot on arXiv"><span>α</span> arXiv</a>
+          <a class="pill" href="https://github.com/YixuannnL/GroundShot" aria-label="GitHub placeholder link"><span>⌘</span> Code</a>
         </nav>
       </div>
     </header>
@@ -56,11 +58,11 @@
         <div class="container container--wide">
           <figure class="feature-figure">
             <img
-              src="assets/images/teaser-placeholder.png"
-              alt="Placeholder teaser showing GroundShot's main idea"
+              src="assets/figures/teaser.png"
+              alt="GroundShot results across construction site, restaurant, office, and living room scenes, with recurring entities highlighted across shots"
             />
             <figcaption>
-              <strong>GroundShot at a glance.</strong> Replace this sentence with a concise teaser caption that explains the task, the core idea, and the main benefit.
+              <strong>GroundShot generates visually consistent multi-shot long videos from text scripts.</strong> Colored annotations highlight recurring characters and objects whose identities remain consistent across shots, while the bottom strip expands one highlighted shot to show temporal continuity and natural within-shot dynamics.
             </figcaption>
           </figure>
         </div>
@@ -70,7 +72,7 @@
         <div class="container prose">
           <h2>Abstract</h2>
           <p>
-            This is a placeholder abstract. Briefly introduce the research problem, explain why existing approaches are limited, and summarize the key idea behind GroundShot. Then describe the most important technical contribution and finish with one or two sentences about the main experimental findings. A typical project-page abstract is around 150–220 words.
+            Generating visually consistent multi-shot videos remains an open challenge. As videos span more shots, inconsistencies can accumulate across shots, causing entities that reappear across shots&mdash;characters, objects, and locations&mdash;to drift away from how they first appear. We observe that viewers judge consistency by comparing each later appearance of an entity with its first clear appearance; the visual quality of this initial appearance sets the consistency ceiling for all that follows. Motivated by this, we present <strong>GroundShot</strong>, a training-free, model-agnostic agentic framework for entity-grounded multi-shot generation. GroundShot builds an entity-level visual memory online from accepted generated shots: it schedules shots' generation order by their expected usefulness as entity references, grounds entities from generated videos, verifies their reliability before adding them to memory, and retrieves suitable entity references from memory before each shot is generated. To evaluate this entity-centered view of consistency, we further introduce <strong>GroundBench</strong>, a diagnostic benchmark that measures consistency at the entity level while isolating controlled challenge dimensions. Experiments show that GroundShot improves multi-shot consistency over existing methods while requiring no additional training or model modification.
           </p>
         </div>
       </section>
@@ -78,24 +80,24 @@
       <section class="section section--soft" id="highlights">
         <div class="container">
           <div class="section-heading">
-            <p class="kicker">Why it matters</p>
+            <p class="kicker">Key contributions</p>
             <h2>Highlights</h2>
           </div>
           <div class="highlight-grid">
             <article class="highlight-card">
               <span class="highlight-card__number">01</span>
-              <h3>Clear problem framing</h3>
-              <p>One short sentence describing the gap your work addresses.</p>
+              <h3>Quality-aware shot scheduling</h3>
+              <p>GroundShot decouples generation order from narrative order, prioritizing shots expected to provide clear canonical references for recurring entities.</p>
             </article>
             <article class="highlight-card">
               <span class="highlight-card__number">02</span>
-              <h3>Simple core idea</h3>
-              <p>One short sentence explaining what is technically new.</p>
+              <h3>Entity-level visual memory</h3>
+              <p>It grounds characters, objects, and locations from accepted shots, filters unreliable references, and retrieves canonical-consistent references for each new shot.</p>
             </article>
             <article class="highlight-card">
               <span class="highlight-card__number">03</span>
-              <h3>Strong results</h3>
-              <p>One short sentence summarizing the key empirical result.</p>
+              <h3>GroundBench and strong results</h3>
+              <p>A diagnostic entity-level benchmark enables controlled failure analysis, where GroundShot outperforms strong baselines without training or model modification.</p>
             </article>
           </div>
         </div>
@@ -106,15 +108,15 @@
           <div class="section-heading section-heading--center">
             <p class="kicker">How it works</p>
             <h2>Method</h2>
-            <p class="section-intro">Use a single wide figure to explain the full pipeline before adding technical details.</p>
+            <p class="section-intro">Given a text script and an optional global caption, GroundShot builds an entity-level visual memory and generates shots in a quality-aware order that prioritizes strong references. The generated clips are then restored to their original narrative order.</p>
           </div>
           <figure class="feature-figure">
             <img
-              src="assets/images/method-placeholder.png"
-              alt="Placeholder diagram for the GroundShot method"
+              src="assets/figures/pipeline.png"
+              alt="GroundShot pipeline covering script parsing, quality-aware shot scheduling, entity-level visual memory, shot generation, verification, grounding, and final output"
             />
             <figcaption>
-              <strong>Method overview.</strong> Replace this caption with a step-by-step explanation of the diagram. For example: (a) input and preprocessing, (b) the proposed architecture, and (c) the final output or training objective.
+              <strong>Overview of GroundShot.</strong> (1) Script parsing extracts recurring characters, objects, and locations and identifies the entities present in each shot. (2) Quality-aware shot scheduling predicts which shots can provide strong references, builds a dependency graph, and topologically sorts it into a scheduled generation order. (3) Entity-level visual memory stores a protected canonical reference together with reliable, canonical-consistent supplementary references for each entity. (4) For every scheduled shot, GroundShot retrieves suitable references, selects text-to-video or reference-conditioned generation, verifies and repairs the result when needed, grounds entity-level evidence, and updates memory with reliable references. (5) After all shots are generated, the clips are reordered into narrative order to produce the final multi-shot video.
             </figcaption>
           </figure>
         </div>
@@ -125,48 +127,44 @@
           <div class="section-heading section-heading--center section-heading--light">
             <p class="kicker">Qualitative results</p>
             <h2>Results</h2>
-            <p class="section-intro">Replace the preview cards with your MP4, WebM, GIF, or image results.</p>
+            <p class="section-intro">Multi-shot comparisons and additional examples with scripts synchronized to the displayed shots.</p>
           </div>
 
-          <div class="results-grid">
-            <article class="result-card">
-              <div class="result-media">
-                <img src="assets/images/result-01-placeholder.png" alt="Placeholder for result example one" />
-                <span class="play-badge" aria-hidden="true">▶</span>
+          <section class="result-group" aria-labelledby="comparison-results-title">
+            <div class="result-group__heading">
+              <div>
+                <p class="result-group__index">01</p>
+                <h3 id="comparison-results-title">Comparison</h3>
               </div>
-              <div class="result-card__body">
-                <p class="result-label">Example 01</p>
-                <h3>A concise result title</h3>
-                <p>Prompt, input condition, or one-line description goes here.</p>
-              </div>
-            </article>
+              <!-- <p>One case, six models, synchronized shot playback.</p> -->
+            </div>
 
-            <article class="result-card">
-              <div class="result-media">
-                <img src="assets/images/result-02-placeholder.png" alt="Placeholder for result example two" />
-                <span class="play-badge" aria-hidden="true">▶</span>
-              </div>
-              <div class="result-card__body">
-                <p class="result-label">Example 02</p>
-                <h3>A concise result title</h3>
-                <p>Prompt, input condition, or one-line description goes here.</p>
-              </div>
-            </article>
+            <div class="global-script-line">
+              <span>Global script</span>
+              <p data-comparison-global-script></p>
+            </div>
 
-            <article class="result-card">
-              <div class="result-media">
-                <img src="assets/images/result-03-placeholder.png" alt="Placeholder for result example three" />
-                <span class="play-badge" aria-hidden="true">▶</span>
-              </div>
-              <div class="result-card__body">
-                <p class="result-label">Example 03</p>
-                <h3>A concise result title</h3>
-                <p>Prompt, input condition, or one-line description goes here.</p>
-              </div>
-            </article>
-          </div>
+            <div class="comparison-controller" aria-live="polite">
+              <button class="sequence-button" type="button" data-comparison-toggle>▶ Play sequence</button>
+              <span class="shot-counter" data-comparison-counter></span>
+              <p class="current-script" data-comparison-script></p>
+              <div class="sequence-dots" data-comparison-dots aria-label="Choose comparison shot"></div>
+            </div>
 
-          <p class="replacement-note">Video files can live in <code>assets/videos/</code>. See that folder’s README for the exact replacement snippet.</p>
+            <div class="comparison-video-grid" data-comparison-grid></div>
+          </section>
+
+          <section class="result-group result-group--more" aria-labelledby="more-results-title">
+            <div class="result-group__heading">
+              <div>
+                <p class="result-group__index">02</p>
+                <h3 id="more-results-title">More Results</h3>
+              </div>
+              <!-- <p>Three independent cases with variable-length shot sequences.</p> -->
+            </div>
+
+            <div class="more-results-grid" data-more-results-grid></div>
+          </section>
         </div>
       </section>
 
@@ -174,23 +172,66 @@
         <div class="container container--wide">
           <div class="section-heading section-heading--center">
             <p class="kicker">Evaluation</p>
-            <h2>Comparison</h2>
-            <p class="section-intro">A compact table works well for headline quantitative results.</p>
+            <h2>Quantitative Comparison</h2>
+            <p class="section-intro">Results on GroundBench across entity-level consistency, shot-level consistency, and video quality. Up arrows indicate that higher values are better.</p>
           </div>
           <div class="table-wrap" role="region" aria-label="Comparison results" tabindex="0">
-            <table>
+            <table class="results-table">
+              <caption>Best results are shown in <strong>bold</strong>; second-best results are <u>underlined</u>.</caption>
+              <colgroup>
+                <col class="method-column" />
+                <col class="metric-column" span="9" />
+              </colgroup>
               <thead>
                 <tr>
-                  <th>Method</th>
-                  <th>Metric ↑</th>
-                  <th>Metric ↓</th>
-                  <th>User Study ↑</th>
+                  <th rowspan="2" scope="col">Method</th>
+                  <th colspan="5" scope="colgroup" class="metric-group metric-group--entity">Entity-Level</th>
+                  <th colspan="2" scope="colgroup" class="metric-group metric-group--shot">Shot-Level</th>
+                  <th colspan="2" scope="colgroup" class="metric-group metric-group--quality">Quality</th>
+                </tr>
+                <tr>
+                  <th scope="col"><abbr title="Anchor-Relative Consistency">ARC</abbr> ↑</th>
+                  <th scope="col"><abbr title="Cross-Character Discrimination">XCD</abbr> ↑</th>
+                  <th scope="col"><abbr title="Worst-Case Identity">WCI</abbr> ↑</th>
+                  <th scope="col"><abbr title="Entity-Attribute Fidelity">EAF</abbr> ↑</th>
+                  <th scope="col"><abbr title="Environment/Scene Consistency">ESC</abbr></th>
+                  <th scope="col">FaceSim ↑</th>
+                  <th scope="col"><abbr title="Cross-Shot Consistency">CSC</abbr> ↑</th>
+                  <th scope="col">Aesth. ↑</th>
+                  <th scope="col">Dyn.</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Baseline A</td><td>00.0</td><td>00.0</td><td>00.0%</td></tr>
-                <tr><td>Baseline B</td><td>00.0</td><td>00.0</td><td>00.0%</td></tr>
-                <tr class="ours"><td>GroundShot (Ours)</td><td><strong>00.0</strong></td><td><strong>00.0</strong></td><td><strong>00.0%</strong></td></tr>
+                <tr>
+                  <td>HoloCine</td><td>0.368</td><td>0.119</td><td>0.212</td><td>0.617</td><td>0.549</td><td>0.417</td><td>0.621</td><td>0.542</td><td>0.539</td>
+                </tr>
+                <tr>
+                  <td>MultiShotMaster-1.3B</td><td>0.220</td><td>0.057</td><td>0.163</td><td>0.613</td><td>0.480</td><td>0.271</td><td>0.509</td><td>0.521</td><td>0.625</td>
+                </tr>
+                <tr>
+                  <td>MultiShotMaster-14B</td><td>0.282</td><td>0.078</td><td>0.204</td><td>0.611</td><td>0.397</td><td>0.367</td><td>0.572</td><td>0.540</td><td>0.375</td>
+                </tr>
+                <tr>
+                  <td>StoryMem</td><td>0.314</td><td>0.125</td><td>0.240</td><td>0.616</td><td><strong>0.700</strong></td><td>0.368</td><td>0.656</td><td>0.536</td><td><strong>0.750</strong></td>
+                </tr>
+                <tr class="group-start">
+                  <td>Vidu-Naive</td><td>0.346</td><td>0.114</td><td>0.221</td><td>0.615</td><td>0.565</td><td>0.404</td><td>0.635</td><td>0.545</td><td>0.615</td>
+                </tr>
+                <tr class="ours">
+                  <td>GroundShot (Vidu)</td><td><strong>0.426</strong></td><td><strong>0.157</strong></td><td><strong>0.264</strong></td><td><strong>0.634</strong></td><td>0.670</td><td><strong>0.449</strong></td><td><strong>0.671</strong></td><td><u>0.552</u></td><td>0.640</td>
+                </tr>
+                <tr class="group-start">
+                  <td>Kling-Naive</td><td>0.355</td><td>0.116</td><td>0.227</td><td>0.612</td><td>0.583</td><td>0.408</td><td>0.642</td><td>0.550</td><td>0.620</td>
+                </tr>
+                <tr class="ours">
+                  <td>GroundShot (Kling)</td><td><u>0.414</u></td><td><u>0.151</u></td><td><u>0.255</u></td><td><u>0.629</u></td><td><u>0.688</u></td><td><u>0.441</u></td><td><u>0.663</u></td><td><strong>0.558</strong></td><td><u>0.715</u></td>
+                </tr>
+                <tr class="group-start">
+                  <td>Phantom-Naive</td><td>0.301</td><td>0.081</td><td>0.198</td><td>0.598</td><td>0.526</td><td>0.356</td><td>0.586</td><td>0.528</td><td>0.580</td>
+                </tr>
+                <tr class="ours">
+                  <td>GroundShot (Phantom)</td><td>0.376</td><td>0.127</td><td>0.235</td><td>0.614</td><td>0.634</td><td>0.402</td><td>0.642</td><td>0.534</td><td>0.610</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -205,22 +246,19 @@
           </div>
           <div class="code-block">
             <button class="copy-button" type="button" data-copy-bibtex>Copy</button>
-            <pre><code id="bibtex-code">@article{groundshot2026,
-  title   = {GroundShot: Your Paper Subtitle Goes Here},
-  author  = {Author One and Author Two and Author Three and Author Four},
-  journal = {Conference or arXiv},
-  year    = {2026}
+            <pre><code id="bibtex-code">@misc{lai2026groundshot,
+  title         = {GroundShot: Visually Consistent Multi-Shot Long Video Generation via Entity-Grounded Shot Scheduling},
+  author        = {Lai, Yixuan and Shao, Tianjia and Dou, Weijia and Zhu, Siyu and Wang, Jingdong},
+  year          = {2026},
+  eprint        = {2606.20799},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  doi           = {10.48550/arXiv.2606.20799}
 }</code></pre>
           </div>
         </div>
       </section>
 
-      <section class="section" id="acknowledgements">
-        <div class="container prose">
-          <h2>Acknowledgements</h2>
-          <p>Add funding, collaborator, compute, and dataset acknowledgements here.</p>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">

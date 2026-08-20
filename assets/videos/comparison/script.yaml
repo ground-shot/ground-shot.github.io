@@ -1,0 +1,131 @@
+global_caption: In a modest apartment living room filled with warm light and city
+  views, three distinct friends—an early 60s woman with short grey curls, bright blue
+  eyes, rosy cheeks, and a powder blue down jacket; an early 30s stocky man with a
+  thick black mustache, warm complexion, and brown leather bomber jacket; and a mid-20s
+  woman with voluminous curly dark hair, bronze skin, a bright smile, and a turquoise
+  wrap dress—share a rare peaceful afternoon together. As they settle in, the group
+  revels in quiet camaraderie, each savoring the moment in their own unique way.
+metadata:
+  script_id: B3_01
+  module: B
+  sub_module: B3
+  primary_challenge: character_groups
+  challenge_level: 1
+  generation_seed: 44100
+  total_shots: 6
+  characters:
+  - id: char_01
+    description: early 60s female, short grey curls, bright blue eyes, rosy cheeks,
+      wearing powder blue down jacket
+    gender: female
+    age: early 60s
+    appearances:
+    - 1
+    - 4
+    - 5
+    - 6
+  - id: char_02
+    description: early 30s male, thick black mustache, stocky build, warm complexion,
+      wearing brown leather bomber jacket
+    gender: male
+    age: early 30s
+    appearances:
+    - 1
+    - 2
+    - 4
+    - 5
+    - 6
+  - id: char_03
+    description: mid 20s female, voluminous curly dark hair, bronze skin, bright smile,
+      wearing turquoise wrap dress
+    gender: female
+    age: mid 20s
+    appearances:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+  settings:
+  - id: set_09
+    name: apartment living room
+    description: A modest living room with a sofa, bookshelves, and a window overlooking
+      the city
+shots:
+- shot_id: 1
+  text: In a medium, low-key frontal shot, all three friends sit closely on the worn
+    sofa. The early 60s woman, her short grey curls framing bright blue eyes and rosy
+    cheeks, chats softly with the stocky man whose thick black mustache and brown
+    bomber jacket catch the light. Beside them, the young woman in a turquoise wrap
+    dress beams, her voluminous dark curls spilling over her shoulder as she listens.
+  duration_seconds: 4.0
+  shot_type: medium
+  lighting: low_key
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+  - char_03
+- shot_id: 2
+  text: The wide, frontal frame focuses solely on the man in the brown bomber jacket.
+    He leans against the bookshelf, hands tucked in his pockets, his thick mustache
+    twitching as he smiles quietly at something unsaid. The golden indoor light bathes
+    his warm complexion, and the city glows behind the window, hinting at the comfort
+    inside.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_warm
+  camera_angle: frontal
+  characters_present:
+  - char_02
+- shot_id: 3
+  text: From a wide, frontal perspective, the woman in the turquoise wrap dress stands
+    near the window, her bronze skin illuminated by the indoor lights. She gazes out
+    at the skyline, her bright smile fading into thoughtful serenity, fingers trailing
+    absentmindedly along the glass as her voluminous curls catch the glow.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_warm
+  camera_angle: frontal
+  characters_present:
+  - char_03
+- shot_id: 4
+  text: With indoor neutral lighting, the camera captures all three friends sprawled
+    across the sofa in a wide shot. The powder blue down jacket is draped over the
+    early 60s woman’s lap, while the brown bomber jacketed man playfully nudges her,
+    and the turquoise dress-clad woman laughs, her curls bouncing as she leans forward.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_neutral
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+  - char_03
+- shot_id: 5
+  text: The scene shifts subtly as the friends settle deeper into the sofa. The woman
+    in the powder blue jacket glances at the man’s bomber jacket, her eyes twinkling,
+    while the turquoise dress stands out against the bookshelves. Nobody speaks; instead,
+    their relaxed postures and gentle smiles communicate the unspoken joy of being
+    together.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_neutral
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+  - char_03
+- shot_id: 6
+  text: In the final wide shot, the group sits in comfortable silence, the neutral
+    indoor light casting soft shadows. The early 60s woman’s powder blue jacket, the
+    man’s brown bomber, and the woman’s turquoise dress create a tapestry of color
+    as hands meet over a steaming teapot, savoring one last sip in peaceful harmony.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_neutral
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+  - char_03

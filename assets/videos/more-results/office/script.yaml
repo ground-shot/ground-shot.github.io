@@ -1,0 +1,101 @@
+global_caption: In a sleek, modern open-plan office with glass partitions and rows
+  of glowing monitors, two colleagues—Jacob, an athletic man in his early 40s with
+  wavy brown hair pushed back, stubble, and a navy pea coat, and Mei, a petite woman
+  in her late 20s with straight shoulder-length black hair, almond eyes, and a lavender
+  cashmere sweater—tackle a demanding design project together. Their contrasting presences
+  and work styles create a dynamic atmosphere as they collaborate intensely, each
+  bringing unique energy to the workspace.
+metadata:
+  script_id: B1_01
+  module: B
+  sub_module: B1
+  primary_challenge: visually_distinct_pairs
+  challenge_level: 1
+  generation_seed: 43500
+  total_shots: 5
+  characters:
+  - id: char_01
+    description: early 40s male, wavy brown hair pushed back, stubble, athletic build,
+      wearing navy pea coat
+    gender: male
+    age: early 40s
+    appearances:
+    - 1
+    - 3
+    - 4
+    - 5
+  - id: char_02
+    description: late 20s female, straight shoulder-length black hair, almond eyes,
+      petite frame, wearing lavender cashmere sweater and dark jeans
+    gender: female
+    age: late 20s
+    appearances:
+    - 2
+    - 3
+    - 5
+  settings:
+  - id: set_07
+    name: office workspace
+    description: A modern open-plan office with glass partitions, desks, and monitors
+shots:
+- shot_id: 1
+  text: The camera captures a wide, frontal view of Jacob—athletic build, wavy brown
+    hair pushed back, a dusting of stubble, his navy pea coat buttoned smartly—standing
+    alone by a glass-partitioned desk. He scans a spread of blueprints, jaw set in
+    focus, tapping a pencil against his lips as the low hum of the office vibrates
+    around him.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_neutral
+  camera_angle: frontal
+  characters_present:
+  - char_01
+- shot_id: 2
+  text: Across the room, a wide shot frames Mei, petite with straight shoulder-length
+    black hair and almond eyes, her lavender cashmere sweater bright against the backdrop
+    of dark jeans and glowing monitors. She sits hunched over her laptop, biting her
+    lower lip, fingers flying across the keys in a silent dance of problem-solving
+    determination.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_neutral
+  camera_angle: frontal
+  characters_present:
+  - char_02
+- shot_id: 3
+  text: Warm afternoon light bathes the workspace as Jacob, his navy pea coat sharp
+    against the glass, leans over Mei’s shoulder. Mei, sleeves of lavender sweater
+    pushed to her elbows, gestures animatedly at her screen, her eyes flicking up
+    to meet his. They exchange a rapid volley of ideas, tension and creativity sparking
+    between them.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_warm
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+- shot_id: 4
+  text: In close-up, Jacob’s stubbled jaw clenches and relaxes as he studies a monitor,
+    brows furrowing in silent calculation. His hand hovers over the mouse, pausing—should
+    he make the bold adjustment? The ambient chatter of the office fades as his inner
+    resolve crystallizes in a single, decisive click.
+  duration_seconds: 4.0
+  shot_type: close-up
+  lighting: indoor_warm
+  camera_angle: frontal
+  characters_present:
+  - char_01
+- shot_id: 5
+  text: The camera moves in for a tight, frontal shot of Jacob’s navy pea coat beside
+    Mei’s lavender sweater. Their faces hover over the final design on the screen;
+    Mei’s almond eyes shine with satisfaction, while Jacob allows a brief, relieved
+    smile. Their hands rest side by side on the desk—two distinct energies united
+    in accomplishment.
+  duration_seconds: 4.0
+  shot_type: close-up
+  lighting: indoor_neutral
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02

@@ -1,0 +1,98 @@
+global_caption: In the upscale restaurant dining area, late 30s male with receding
+  brown hair, thin-framed glasses, a slight paunch, and a navy blue cardigan over
+  a checkered shirt waits anxiously. Across the room, a mid 20s female with long wavy
+  auburn hair, freckles across her nose, striking green eyes, and an olive green military-style
+  parka enters, bracing for an inevitable confrontation. Their uneasy reunion unfolds
+  amid dim candlelight and pristine white tablecloths, as both struggle to navigate
+  the tension between them.
+metadata:
+  script_id: B1_02
+  module: B
+  sub_module: B1
+  primary_challenge: visually_distinct_pairs
+  challenge_level: 2
+  generation_seed: 43600
+  total_shots: 5
+  characters:
+  - id: char_01
+    description: late 30s male, receding brown hair, thin-framed glasses, slight paunch,
+      wearing navy blue cardigan over checkered shirt
+    gender: male
+    age: late 30s
+    appearances:
+    - 1
+    - 3
+    - 4
+    - 5
+  - id: char_02
+    description: mid 20s female, long wavy auburn hair, freckles across nose, green
+      eyes, wearing olive green military-style parka
+    gender: female
+    age: mid 20s
+    appearances:
+    - 2
+    - 3
+    - 5
+  settings:
+  - id: set_11
+    name: restaurant dining area
+    description: An upscale restaurant with dim ambient lighting, white tablecloths,
+      and candles
+shots:
+- shot_id: 1
+  text: A close-up reveals the man's furrowed brow and receding brown hair, his thin-framed
+    glasses reflecting the candle's flicker. He shifts uneasily, adjusting his navy
+    blue cardigan, fingers fidgeting atop the checkered shirt. His eyes dart towards
+    the entrance, lips pressed tight as he readies himself for what's coming.
+  duration_seconds: 4.0
+  shot_type: close-up
+  lighting: low_key
+  camera_angle: frontal
+  characters_present:
+  - char_01
+- shot_id: 2
+  text: Framed in a medium shot, the woman stands just inside the doorway, her long
+    wavy auburn hair cascading over the olive green military-style parka. Freckles
+    dot her nose, and green eyes scan the tables, searching for a familiar face. She
+    inhales deeply, shoulders squared as she steels herself for the meeting.
+  duration_seconds: 4.0
+  shot_type: medium
+  lighting: low_key
+  camera_angle: frontal
+  characters_present:
+  - char_02
+- shot_id: 3
+  text: The camera widens to show both characters at opposite ends of the restaurant
+    table. The man, cardigan collar askew, offers a tentative nod. Across from him,
+    the woman’s parka sleeves are clenched in her fists. White tablecloths and candles
+    set the stage, tension thick between them as conversation falters.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: low_key
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
+- shot_id: 4
+  text: Warm indoor light bathes the man as he sits alone, cardigan bunched around
+    his elbows. He stares into his untouched glass of water, tracing patterns on the
+    tablecloth, lost in thought. The bustle of the restaurant fades into background,
+    isolating him in his own worries.
+  duration_seconds: 4.0
+  shot_type: wide
+  lighting: indoor_warm
+  camera_angle: frontal
+  characters_present:
+  - char_01
+- shot_id: 5
+  text: Medium shot brings both back into focus, the woman’s parka and the man’s cardigan
+    unmistakable. She leans forward, voice barely above a whisper, earnestness in
+    her freckled face. He listens, glasses lowered, and the candlelight softens their
+    expressions as the confrontation finally begins to thaw.
+  duration_seconds: 4.0
+  shot_type: medium
+  lighting: low_key
+  camera_angle: frontal
+  characters_present:
+  - char_01
+  - char_02
